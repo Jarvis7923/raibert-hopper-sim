@@ -1,0 +1,17 @@
+MB+MF	0	MF (c Cos[\[Theta][t]]+Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t]))	MF Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t])	MF Sin[q[t]+\[Theta][t]]
+0	MB+MF	MF (c Sin[\[Theta][t]]+(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]])	MF (-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]]	-MF Cos[q[t]+\[Theta][t]]
+MF (c Cos[\[Theta][t]]+Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t]))	MF (c Sin[\[Theta][t]]+(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]])	IB+IF+MF (c Cos[\[Theta][t]]+Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t]))^2+MF (c Sin[\[Theta][t]]+(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]])^2	IF+(L^2 MF)/4-L la MF+la^2 MF-1/2 c (L-2 la) MF Cos[q[t]]-MF (L-2 la-c Cos[q[t]]) l[t]+MF l[t]^2	c MF Sin[q[t]]
+MF Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t])	MF (-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]]	IF+(L^2 MF)/4-L la MF+la^2 MF-1/2 c (L-2 la) MF Cos[q[t]]-MF (L-2 la-c Cos[q[t]]) l[t]+MF l[t]^2	IF+1/4 (L-2 la)^2 MF-(L-2 la) MF l[t]+MF l[t]^2	0
+MF Sin[q[t]+\[Theta][t]]	-MF Cos[q[t]+\[Theta][t]]	c MF Sin[q[t]]	0	MF
+
+1/2 MF (-2 c Sin[\[Theta][t]] (\[Theta]^\[Prime])[t]^2+Cos[q[t]+\[Theta][t]] (4 (l^\[Prime])[t] (q^\[Prime])[t]+4 (l^\[Prime])[t] (\[Theta]^\[Prime])[t])+Sin[q[t]+\[Theta][t]] (L (q^\[Prime])[t]^2-2 la (q^\[Prime])[t]^2-2 l[t] (q^\[Prime])[t]^2+2 L (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 la (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 l[t] (q^\[Prime])[t] (\[Theta]^\[Prime])[t]+L (\[Theta]^\[Prime])[t]^2-2 la (\[Theta]^\[Prime])[t]^2-2 l[t] (\[Theta]^\[Prime])[t]^2))
+1/2 (2 g MB+2 g MF+2 c MF Cos[\[Theta][t]] (\[Theta]^\[Prime])[t]^2+Sin[q[t]+\[Theta][t]] (4 MF (l^\[Prime])[t] (q^\[Prime])[t]+4 MF (l^\[Prime])[t] (\[Theta]^\[Prime])[t])+Cos[q[t]+\[Theta][t]] (-L MF (q^\[Prime])[t]^2+2 la MF (q^\[Prime])[t]^2+2 MF l[t] (q^\[Prime])[t]^2-2 L MF (q^\[Prime])[t] (\[Theta]^\[Prime])[t]+4 la MF (q^\[Prime])[t] (\[Theta]^\[Prime])[t]+4 MF l[t] (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-L MF (\[Theta]^\[Prime])[t]^2+2 la MF (\[Theta]^\[Prime])[t]^2+2 MF l[t] (\[Theta]^\[Prime])[t]^2))
+1/2 MF (2 c g Sin[\[Theta][t]]+(-g L+2 g la+2 g l[t]) Sin[q[t]+\[Theta][t]]-2 L (l^\[Prime])[t] (q^\[Prime])[t]+4 la (l^\[Prime])[t] (q^\[Prime])[t]+4 l[t] (l^\[Prime])[t] (q^\[Prime])[t]-2 L (l^\[Prime])[t] (\[Theta]^\[Prime])[t]+4 la (l^\[Prime])[t] (\[Theta]^\[Prime])[t]+4 l[t] (l^\[Prime])[t] (\[Theta]^\[Prime])[t]+Cos[q[t]] (4 c (l^\[Prime])[t] (q^\[Prime])[t]+4 c (l^\[Prime])[t] (\[Theta]^\[Prime])[t])+Sin[q[t]] (c L (q^\[Prime])[t]^2-2 c la (q^\[Prime])[t]^2-2 c l[t] (q^\[Prime])[t]^2+2 c L (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 c la (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 c l[t] (q^\[Prime])[t] (\[Theta]^\[Prime])[t]))
+-(1/2) MF (L-2 la-2 l[t]) (g Sin[q[t]+\[Theta][t]]+2 (l^\[Prime])[t] (q^\[Prime])[t]+2 (l^\[Prime])[t] (\[Theta]^\[Prime])[t]+c Sin[q[t]] (\[Theta]^\[Prime])[t]^2)
+1/2 (-2 k x0s-2 g MF Cos[q[t]+\[Theta][t]]+2 k l[t]+L MF (q^\[Prime])[t]^2-2 la MF (q^\[Prime])[t]^2-2 MF l[t] (q^\[Prime])[t]^2+2 L MF (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 la MF (q^\[Prime])[t] (\[Theta]^\[Prime])[t]-4 MF l[t] (q^\[Prime])[t] (\[Theta]^\[Prime])[t]+L MF (\[Theta]^\[Prime])[t]^2-2 la MF (\[Theta]^\[Prime])[t]^2-2 c MF Cos[q[t]] (\[Theta]^\[Prime])[t]^2-2 MF l[t] (\[Theta]^\[Prime])[t]^2)
+
+c Sin[\[Theta][t]]+(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]]+x[t]
+-c Cos[\[Theta][t]]-Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t])+y[t]
+
+1	0	c Cos[\[Theta][t]]+Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t])	Cos[q[t]+\[Theta][t]] (-(L/2)+la+l[t])	Sin[q[t]+\[Theta][t]]
+0	1	c Sin[\[Theta][t]]+(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]]	(-(L/2)+la+l[t]) Sin[q[t]+\[Theta][t]]	-Cos[q[t]+\[Theta][t]]

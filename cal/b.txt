@@ -1,0 +1,25 @@
+M = np.array([
+    [MB+MF,0,MF*(c*cth+cqth*(-(L/2)+la+l)),MF*cqth*(-(L/2)+la+l),MF*sqth],
+    [0,MB+MF,MF*(c*sth+(-(L/2)+la+l)*sqth),MF*(-(L/2)+la+l)*sqth,-MF*cqth],
+    [MF*(c*cth+cqth*(-(L/2)+la+l)),MF*(c*sth+(-(L/2)+la+l)*sqth),IB+IF+MF*(c*cth+cqth*(-(L/2)+la+l))**2+MF*(c*sth+(-(L/2)+la+l)*sqth)**2,IF+(L**2*MF)/4-L*la*MF+la**2*MF-1/2*c*(L-2*la)*MF*cq-MF*(L-2*la-c*cq)*l+MF*l**2,c*MF*sq],
+    [MF*cqth*(-(L/2)+la+l),MF*(-(L/2)+la+l)*sqth,IF+(L**2*MF)/4-L*la*MF+la**2*MF-1/2*c*(L-2*la)*MF*cq-MF*(L-2*la-c*cq)*l+MF*l**2,IF+1/4*(L-2*la)**2*MF-(L-2*la)*MF*l+MF*l**2,0],
+    [MF*sqth,-MF*cqth,c*MF*sq,0,MF],
+], dtype=np.float)
+
+h = np.array([
+    1/2*MF*(-2*c*sth*dth**2+cqth*(4*dl*dq+4*dl*dth)+sqth*(L*dq**2-2*la*dq**2-2*l*dq**2+2*L*dq*dth-4*la*dq*dth-4*l*dq*dth+L*dth**2-2*la*dth**2-2*l*dth**2)),
+    1/2*(2*g*MB+2*g*MF+2*c*MF*cth*dth**2+sqth*(4*MF*dl*dq+4*MF*dl*dth)+cqth*(-L*MF*dq**2+2*la*MF*dq**2+2*MF*l*dq**2-2*L*MF*dq*dth+4*la*MF*dq*dth+4*MF*l*dq*dth-L*MF*dth**2+2*la*MF*dth**2+2*MF*l*dth**2)),
+    1/2*MF*(2*c*g*sth+(-g*L+2*g*la+2*g*l)*sqth-2*L*dl*dq+4*la*dl*dq+4*l*dl*dq-2*L*dl*dth+4*la*dl*dth+4*l*dl*dth+cq*(4*c*dl*dq+4*c*dl*dth)+sq*(c*L*dq**2-2*c*la*dq**2-2*c*l*dq**2+2*c*L*dq*dth-4*c*la*dq*dth-4*c*l*dq*dth)),
+    -(1/2)*MF*(L-2*la-2*l)*(g*sqth+2*dl*dq+2*dl*dth+c*sq*dth**2),
+    1/2*(-2*k*x0s-2*g*MF*cqth+2*k*l+L*MF*dq**2-2*la*MF*dq**2-2*MF*l*dq**2+2*L*MF*dq*dth-4*la*MF*dq*dth-4*MF*l*dq*dth+L*MF*dth**2-2*la*MF*dth**2-2*c*MF*cq*dth**2-2*MF*l*dth**2),
+], dtype=np.float)
+
+peef = np.array([
+    c*sth+(-(L/2)+la+l)*sqth+x,
+    -c*cth-cqth*(-(L/2)+la+l)+y,
+], dtype=np.float)
+
+Jeef = np.array([
+    [1,0,c*cth+cqth*(-(L/2)+la+l),cqth*(-(L/2)+la+l),sqth],
+    [0,1,c*sth+(-(L/2)+la+l)*sqth,(-(L/2)+la+l)*sqth,-cqth],
+], dtype=np.float)
