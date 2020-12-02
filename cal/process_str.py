@@ -1,4 +1,10 @@
 import re
+import os
+
+# os.path.basename(os.path.dirname(os.path.realpath(__file__)))
+# realPath = os.path.realpath(currentFile)
+# print(p)
+cur_path = os.path.dirname(os.path.abspath(__file__)) 
 
 def process(text): 
     text = re.sub(r'\n', r'', text)
@@ -18,7 +24,7 @@ def process(text):
     return text
 
 
-with open("a.txt") as fp: 
+with open(cur_path + "/mathematica_format.txt") as fp: 
     Lines = fp.readlines() 
 
 
@@ -52,6 +58,6 @@ for m in range(k, len(Lines)):
 Lines[0] = 'M = np.array([\n' + Lines[0]
 Lines[-1] = Lines[-1] + '], dtype=np.float)\n'
 
-with open('b.txt', 'w') as fp:
+with open(cur_path + "/python_format.txt", 'w') as fp:
     for ele in Lines:
         fp.write(ele)
