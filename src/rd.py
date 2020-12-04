@@ -12,34 +12,17 @@ def sRb(q):
 
 
 class rphase(Enum):
-    TD = 0
-    SQD = 1
-    BOTTOM = 2
-    STU = 3 
-    LO = 4
-    RIS = 5
-    TOP = 6
-    FAL = 7
+    """ enumerate for different phases in the jumping locomotion
+    """
+    TD = 0 # touchdown
+    SQD = 1 # squat down
+    BOTTOM = 2 # bottom
+    STU = 3 # stand up 
+    LO = 4 # liftoff
+    RIS = 5 # rising
+    TOP = 6 # top
+    FAL = 7 # falling
 
-class controller:
-    def __init__(self, rd):
-        self._rd =  rd[0]
-        pass
-    
-    def la_controller(self, k=0):
-        self._rd.test += 1
-        # MB, MF, IB, IF, L, la, c, ks, kt, x0s = self.params
-        # if self.la_tar is None:
-        #     return la 
-        # res_la = la + k*(self.la_tar - la)*self.dt
-        # # res_la = self.la0 + np.sign(self.la_tar - la) * k * (self.time_elapsed - self.la_t0)**2
-        # if res_la >= self.la_tar:
-        #     return self.la_tar
-        # if res_la <= self.la_min:
-        #     return self.la_min
-        # if res_la >= self.la_max:
-        #     return self.la_max
-        # return res_la
 
 class rd:
     def __init__(self, 

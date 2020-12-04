@@ -2,7 +2,7 @@
 
 Achieved forward velocity control and vertical height control. 
 
-Demonstation is here:
+Demonstration is here:
 ![](doc/demo.gif)
 
 ### Reference:
