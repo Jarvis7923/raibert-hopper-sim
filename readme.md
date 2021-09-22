@@ -2,8 +2,12 @@
 
 Achieved forward velocity control and vertical height control. 
 
-Demonstration is here:
+Demonstration for forward velocity control is here:
 ![](doc/demo.gif)
+
+
+vf stands for forward velocity. 
+la controls the jump height. 
 
 ### Reference:
 
